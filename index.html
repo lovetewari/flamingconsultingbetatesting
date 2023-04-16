@@ -27,11 +27,11 @@
 				</div>
 			</div>
 			
-			<!-- login page -->
+<!-- login page -->
 			<div id="login" class="modal">
 				<div class="modal-content">
 					<span id="close-login">&times;</span>
-					<form action='/~/flaming/flaming-check/login' method='POST' enctype='multipart/form-data' autocomplete="on">
+					<form action='/login' method='POST' enctype='multipart/form-data' autocomplete="on">
 						<h2>Login</h2>
 						<p>
 							<input class="Email" name="username" placeholder='Email' type="text" required>
@@ -44,7 +44,7 @@
 								<input type="submit" value="Login" class="submit">
 							</div>
 						</div>
-						<input type='hidden' name='redirecturl' value='/~/flaming/flaming-check/account'>
+						<input type='hidden' name='redirecturl' value='/account'>
 					</form>
 					<span id="go-signup" class="open">Don't have an account yet? Sign up!</span>
 				</div>
@@ -54,7 +54,7 @@
 			<div id="signup" class="modal">
 				<div class="modal-content">
 					<span id="close-signup">&times;</span>
-					<form action='/~/flaming/flaming-check/signup' method='POST' enctype='multipart/form-data' autocomplete="on">
+					<form action='/signup' method='POST' enctype='multipart/form-data' autocomplete="on">
 						<h2>Sign Up</h2>
 						<p>
 							<input id="Name" name="name" type="text" placeholder='Name' required>
@@ -70,10 +70,14 @@
 								<input type="submit" value="Sign Up" class="submit">
 							</div>
 						</div>
-						<input type='hidden' name='redirecturl' value='/~/flaming/flaming-check/account'>
+						<input type='hidden' name='redirecturl' value='/account'>
 					</form>
 					<span id="go-login" class="open">Already have an account? Log in!</span>
 				</div>
+
+
+
+
 			</div>
 		</main>
 		<script src="script.js"></script>
